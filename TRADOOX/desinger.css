@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 20%;
+    height: 200px;
+    background-color: #C21B23;
+}
+header > .tradox > h2 {
+    margin-top: 10px; /* Reduce el espacio */
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+header > div > nav {
+    margin-top: 10px;
+}
+header > div > nav > ul {
+    display: flex;
+}
+header > div > nav > ul > li {
+    list-style: none;
+    margin-left: 30px;
+}
+header > div > nav > ul > li > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+header > div > nav > ul > li > a.activado {
+    font-weight: bold;
+    color: white;
+}
+.login-container {
+    position: absolute;
+    top: 20px;
+    right: 10%;
+}
+#btnlogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    padding-top: 4px;
+    padding-right: 10px;
+    background-color: #C21B23;
+    border: 2px solid #ffffff;
+    border-radius: 14px;
+    transition: 0.3s ease-in all;
+}
+#btnlogin:hover {
+    cursor: pointer;
+    color: #C21B23;
+    background-color: #e7e2e2;
+    border-radius: 0;
+}
+#btnlogin{
+    text-decoration: none;
+    color: white;
+}
+#btnlogin > a > i {
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+header > div > a {
+    display: none;
+}
+#tradox {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#txtBuscar {
+    width: 500px;
+    height: 25px;
+}
+#Categorias{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo {
+    width: 120px;
+    height: 100px;
+    margin-right: 20px;
+}
+.productos {
+    background-color: #f0e9e9;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.productos > .items {
+    flex: 1 1 calc(25% - 20px); 
+    height: 250px;
+}
+.productos > .items > .img {
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.productos > .items > .img > img {
+    display: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in all;
+}
+.productos > .items > .img > img:hover {
+    transform: scale(1.2);
+}
+.productos > .items > h6 {
+    font-weight: 300;
+}
+.productos > .items > .precio {
+    display: flex;
+    justify-content: space-between;
+}
+.productos > .items > .precio > button {
+    border: none;
+    color: #141414;
+    background-color: #c9c5c5;
+}
+.items {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    height: 350px; /* Ajusta la altura total según sea necesario */
+    position: relative; /* Permite usar la posición relativa para el texto */
+}
+
+.texto {
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    overflow: hidden; /* Oculta texto excedente */
+    white-space: normal; /* Permite que el texto se envuelva */
+}
+.precio {
+    margin-top: auto; /* Empuja el precio al fondo del contenedor */
+    display: flex; /* Usa flexbox para alinear los elementos del precio */
+    justify-content: space-between; /* Espacio entre el precio y el botón */
+    width: 100%; /* Hace que el contenedor del precio use todo el ancho */
+}
