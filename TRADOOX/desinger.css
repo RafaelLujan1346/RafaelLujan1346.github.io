@@ -14,7 +14,7 @@ header {
     padding-left: 5%;
     padding-right: 20%;
     height: 200px;
-    background-color: #C21B23;
+    background-color: #C61B21;
 }
 header > .tradox > h2 {
     margin-top: 10px; /* Reduce el espacio */
@@ -53,14 +53,14 @@ header > div > nav > ul > li > a.activado {
     height: 30px;
     padding-top: 4px;
     padding-right: 10px;
-    background-color: #C21B23;
+    background-color: #C61B21;
     border: 2px solid #ffffff;
     border-radius: 14px;
     transition: 0.3s ease-in all;
 }
 #btnlogin:hover {
     cursor: pointer;
-    color: #C21B23;
+    color: #C61B21;
     background-color: #e7e2e2;
     border-radius: 0;
 }
@@ -154,4 +154,63 @@ header > div > a {
     display: flex; /* Usa flexbox para alinear los elementos del precio */
     justify-content: space-between; /* Espacio entre el precio y el botón */
     width: 100%; /* Hace que el contenedor del precio use todo el ancho */
+}
+.pie{
+    margin-top: 100px;
+    background-color: #C61B21;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.pie a {
+    color: inherit; /* Esto hará que el color del enlace herede el color del texto circundante */
+    text-decoration: none; /* Esto quitará el subrayado */
+}
+
+.pie a:hover {
+    text-decoration: underline;
+}
+.pie > .politica{
+    margin-top: 100px;
+    display: flex;
+}
+.pie > .pielogo > img {
+    width: 220px; /* Reducido a la mitad */
+    height: 200px; /* Reducido a la mitad */
+}
+.pie > .redes {
+    margin-top: 90px;
+    display: flex;
+}
+.pie > .politica > ul{
+    display: flex;
+}
+.pie > .politica > ul > li{
+    margin-left: 10px;
+    list-style-type: none;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+.pie > .redes > a > i{
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+.texto-centrado {
+    background-color: #C61B21;
+    text-align: center;
+}
+.pie > .politica > ul > li > ul{
+    list-style-type: none;
+}
+.politica ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding adicional */
+    margin: 0; /* Elimina el margen adicional */
+}
+
+.politica ul ul {
+    list-style-type: none; /* Elimina los puntos de las listas anidadas */
+    padding: 0; /* Elimina el padding adicional */
+    margin: 0; /* Elimina el margen adicional */
 }
