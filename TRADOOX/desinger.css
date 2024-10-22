@@ -79,9 +79,9 @@ header > div > a {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-#txtBuscar {
+.txtBuscar {
     width: 500px;
-    height: 25px;
+    height: 20px;
 }
 #Categorias{
     display: flex;
