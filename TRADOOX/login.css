@@ -2,3 +2,44 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%; /* Asegura que el header ocupe todo el ancho de la pantalla */
+    padding: 10px;
+    background-color: #f5f5f5; /* Fondo opcional */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente en la página */
+}
+
+.tradox {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna (uno debajo del otro) */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espacio entre los elementos en la columna */
+}
+
+#Sesion {
+    display: flex;
+    flex-direction: column; /* Coloca los inputs en una columna */
+    gap: 5px; /* Espacio entre los campos de entrada */
+}
+
+#Buttons {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en una columna */
+    gap: 5px; /* Espacio entre los botones */
+}
+
+.txtBuscar {
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}

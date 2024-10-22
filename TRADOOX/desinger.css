@@ -175,8 +175,8 @@ header > div > a {
     display: flex;
 }
 .pie > .pielogo > img {
-    width: 220px; /* Reducido a la mitad */
-    height: 200px; /* Reducido a la mitad */
+    width: 220px; 
+    height: 200px;
 }
 .pie > .redes {
     margin-top: 90px;
