@@ -34,6 +34,9 @@ header {
     width: 100%;
     max-width: 600px;
 }
+#Buttons {
+    margin-top: 20px;
+}
 #button {
     display: flex;
     justify-content: center;

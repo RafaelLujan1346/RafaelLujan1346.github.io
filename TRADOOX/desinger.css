@@ -214,3 +214,6 @@ header > div > a {
     padding: 0; /* Elimina el padding adicional */
     margin: 0; /* Elimina el margen adicional */
 }
+#user-btn {
+    display: none;
+}
