@@ -7,7 +7,7 @@ const ctx = document.getElementById('chartIngresos');
         'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
       datasets: [{
         label: 'Ganancias por mes',
-        data: [1200, 4119, 3233, 1125, 2342, 4113,6786,2237,9468,6489,6374,8927],
+        data: [14200, 41159, 32333, 11255, 23342, 41153,67836,25537,94668,64889,63974,89927],
         borderWidth: 1
       }]
     },
@@ -24,10 +24,10 @@ const ctx = document.getElementById('chartIngresos');
   new Chart(ctx2, {
     type: 'pie',
     data: {
-      labels: ['Desayunos', 'Comidas', 'Cenas', 'Snacks'],
+      labels: ['Ventas', 'productos', 'usuarios', 'deudas'],
       datasets: [{
-        label: 'Dietas por categorias',
-        data: [120, 340, 60, 15],
+        label: 'Datos generales',
+        data: [834420, 3443507, 425360, 1546435],
         borderWidth: 1
       }]
     },

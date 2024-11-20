@@ -10,22 +10,22 @@
 <body class="d-flex">
     <!--SIDEBAR-->
     <aside class="d-flex" style="width: 15% w-100">
-      <div class="bg-dark text-white p-3 vh-100 "  >
-          <h2>Productos</h2>
-          <nav style="width: 160px;">
-              <ul class="nav flex-column">
-                  <li class="nav-item"><a href="./admin.html" class="nav-link text-white">
-                  <i class="bi bi-house-fill"></i>&nbsp;&nbsp;&nbsp;Inicio</a></li>
-                  <li class="nav-item"><a href="./users.html" class="nav-link text-white">
-                  <i class="bi bi-person-fill"></i>&nbsp;&nbsp;&nbsp;Usuarios</a></li>
-                  <li class="nav-item"><a href="./productos.html" class="nav-link text-white">
-                  <i class="bi bi-box-arrow-down"></i></i>&nbsp;&nbsp;&nbsp;Productos</a></li>
-                  <li class="nav-item"><a href="./inventario.html" class="nav-link text-white">
-                  <i class="bi bi-floppy"></i>&nbsp;&nbsp;&nbsp;Inventario</a></li>
-              </ul>
-          </nav>
-      </div>
-  </aside>
+        <div class="bg-dark text-white p-3 vh-100 "  >
+            <h2>Productos</h2>
+            <nav style="width: 160px;">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="./admin.html" class="nav-link text-white">
+                    <i class="bi bi-house-fill"></i>&nbsp;&nbsp;&nbsp;Inicio</a></li>
+                    <li class="nav-item"><a href="./users.html" class="nav-link text-white">
+                    <i class="bi bi-person-fill"></i>&nbsp;&nbsp;&nbsp;Usuarios</a></li>
+                    <li class="nav-item"><a href="./productos.html" class="nav-link text-white">
+                    <i class="bi bi-box-arrow-down"></i></i>&nbsp;&nbsp;&nbsp;Productos</a></li>
+                    <li class="nav-item"><a href="./inventario.html" class="nav-link text-white">
+                    <i class="bi bi-floppy"></i>&nbsp;&nbsp;&nbsp;Inventario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
     <!-- END SIDEBAR -->
     <!-- main Contet -->
     <main class="flex-grow-1 ">
@@ -70,7 +70,7 @@
         <section class="container-mt-4 p-4">    
             <!-- TITTLE SECTION -->
              <div class="d-flex justify-content-between">
-                <h4>Registro de productos</h4>
+                <h4>Inventario</h4>
                 <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i class="bi bi-box-arrow-down"></i>
                     Agregar
@@ -83,12 +83,11 @@
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Descripcion</th>
-                        <th scope="col">Precio</th>
+                        <th scope="col">Nombre Producto</th>
+                        <th scope="col">Id Producto</th>
+                        <th scope="col">Actualizacion</th>
                         <th scope="col">Stock</th>
-                        <th scope="col">Categoria</th>
-                        <th scope="col">Fecha de registro</th>
+                        <th scope="col">Total</th>
                         <th></th>
                       </tr>
                     </thead>
@@ -96,11 +95,10 @@
                       <tr>
                         <th scope="row">1</th>
                         <td>Sopa</td>
-                        <td>Sopa de trigo</td>
-                        <td>6.99</td>
-                        <td>60</td>
-                        <td>Despensa</td>
-                        <td>18/11/2024</td>
+                        <td>1</td>
+                        <td>19/11/2024</td>
+                        <td>50</td>
+                        <td>110</td>
                         <td>
                             <button class="btn btn-outline-danger btn-sm mx-1"  onclick="mostrarAlerta()"><i class="bi bi-trash3-fill"></i></button>
                             <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#editModal">
@@ -111,11 +109,10 @@
                       <tr>
                         <th scope="row">1</th>
                         <td>Sopa</td>
-                        <td>Sopa de trigo</td>
-                        <td>6.99</td>
-                        <td>60</td>
-                        <td>Despensa</td>
-                        <td>18/11/2024</td>
+                        <td>1</td>
+                        <td>19/11/2024</td>
+                        <td>50</td>
+                        <td>110</td>
                         <td>
                             <button class="btn btn-outline-danger btn-sm mx-1"  onclick="mostrarAlerta()"><i class="bi bi-trash3-fill"></i></button>
                             <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#editModal">
@@ -126,11 +123,10 @@
                       <tr>
                         <th scope="row">1</th>
                         <td>Sopa</td>
-                        <td>Sopa de trigo</td>
-                        <td>6.99</td>
-                        <td>60</td>
-                        <td>Despensa</td>
-                        <td>18/11/2024</td>
+                        <td>1</td>
+                        <td>19/11/2024</td>
+                        <td>50</td>
+                        <td>110</td>
                         <td>
                             <button class="btn btn-outline-danger btn-sm mx-1"  onclick="mostrarAlerta()"><i class="bi bi-trash3-fill"></i></button>
                             <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#editModal">
@@ -161,26 +157,26 @@
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
             <div class="col-6 mb-2 p2">
-                    <label for="">Descripcion</label>
-                    <input required type="text" class="form-control" placeholder="Agregue una descripcion">
+                    <label for="">id</label>
+                    <input required type="number" class="form-control" placeholder="Agrege el id">
                     <div class="valid-feedback">Correcto </div>
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
                 <div class="col-6 mb-2 p2">
-                    <label for="">Precio</label>
-                    <input required type="number" class="form-control" placeholder="Agregue un precio">
+                    <label for="">Actualizacion</label>
+                    <input required type="date" class="form-control" placeholder="Fecha de actualizacion">
                     <div class="valid-feedback">Correcto </div>
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
                 <div class="col-6 mb-2 p2">
                     <label for="">Cantidad</label>
-                    <input required type="number" class="form-control" placeholder="Agrega la cantidad a vender">
+                    <input required type="number" class="form-control" placeholder="Agrega la cantidad extra">
                     <div class="valid-feedback">Correcto </div>
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
                 <div class="col-6 mb-2 p2">
-                    <label for="">Categoria</label>
-                    <input required type="text" class="form-control" placeholder="Agregue la categoria">
+                    <label for="">Total</label>
+                    <input required type="number" class="form-control" placeholder="Agregue el total de productos">
                     <div class="valid-feedback">Correcto </div>
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
@@ -210,38 +206,32 @@
          <div class="modal-body">
             <div class="row">
                 <div class="col-6">
-                    <label for="">Nombre</label>
-                    <input required type="text" class="form-control" placeholder="Inserta el cambio de nombre">
+                    <label for="">Nombre del producto</label>
+                    <input required type="text" class="form-control"  placeholder="Inserte el nombre del producto">
                     <div class="valid-feedback">Correcto </div>
-                    <div class="invalid-feedback">Campo incorrecto </div>
+                    <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
             <div class="col-6 mb-2 p2">
-                    <label for="">Descripcion</label>
-                    <input required type="text" class="form-control" placeholder="Inserta la nueva descripcion">
+                    <label for="">id</label>
+                    <input required type="number" class="form-control" placeholder="Agrege el id">
                     <div class="valid-feedback">Correcto </div>
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
                 <div class="col-6 mb-2 p2">
-                    <label for="">Precio</label>
-                    <input required type="number" class="form-control" placeholder="Inserta el cambio de precio">
+                    <label for="">Actualizacion</label>
+                    <input required type="date" class="form-control" placeholder="Fecha de actualizacion">
                     <div class="valid-feedback">Correcto </div>
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
                 <div class="col-6 mb-2 p2">
-                    <label for="">Stock</label>
-                    <input required type="number" class="form-control" placeholder="Inserta el cambio del stock">
+                    <label for="">Cantidad</label>
+                    <input required type="number" class="form-control" placeholder="Agrega la cantidad extra">
                     <div class="valid-feedback">Correcto </div>
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
                 <div class="col-6 mb-2 p2">
-                    <label for="">Categoria</label>
-                    <input required type="text" class="form-control" placeholder="Inserta el cambio de categoria">
-                    <div class="valid-feedback">Correcto </div>
-                    <div class="invalid-feedback">Llene el campo correctamente</div>
-                </div>
-                <div class="col-6 mb-2 p2">
-                    <label for="">Fecha</label>
-                    <input required type="date" class="form-control" placeholder="Registra la fecha de modificacion">
+                    <label for="">Total</label>
+                    <input required type="number" class="form-control" placeholder="Agregue el total de productos">
                     <div class="valid-feedback">Correcto </div>
                     <div class="invalid-feedback">Llene el campo correctamente</div>
                 </div>
